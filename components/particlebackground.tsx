@@ -52,6 +52,14 @@ function ParticleBackground() {
               distance: 100,
               duration: 0.4,
             },
+            attract: {
+              distance: 200,
+              duration: 0.4,
+              easing: "ease-out-quad",
+              factor: 1,
+              maxSpeed: 50,
+              speed: 1,
+            },
           },
         },
         particles: {
@@ -87,8 +95,9 @@ function ParticleBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
+            attract: { distance: 200, enable: true },
           },
           number: {
             density: {
@@ -98,13 +107,13 @@ function ParticleBackground() {
             value: 30,
           },
           opacity: {
-            value: 0.5,
+            value: 1,
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 2 },
+            value: { min: 0.2, max: 0.5 },
           },
         },
         detectRetina: true,
