@@ -5,7 +5,7 @@ type XY = {
   y: number;
 };
 
-const constrain = 400;
+const constrain = 700;
 
 function transformElement(element: HTMLDivElement, xy: XY) {
   const x = xy.x;

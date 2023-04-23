@@ -26,11 +26,7 @@ function ParticleBackground() {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        background: {
-          color: {
-            value: "#000000",
-          },
-        },
+        background: {},
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -95,14 +91,14 @@ function ParticleBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 0.24,
             straight: false,
             attract: { distance: 200, enable: true },
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 400,
             },
             value: 30,
           },
