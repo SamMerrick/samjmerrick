@@ -8,6 +8,7 @@ import LinkedinIcon from "../assets/icons/linkedin.svg";
 import EmailIcon from "../assets/icons/envelope-solid.svg";
 import CalIcon from "../assets/icons/calendar-regular.svg";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -21,7 +22,24 @@ export default function Home() {
           key="desc"
         />
       </Head>
-
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-RKDYL58WL7"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RKDYL58WL7', {
+            page_path: window.location.pathname,
+            });
+            `,
+        }}
+      />
       <main className="flex min-h-screen flex-col items-center md:pt-32 pt-20 px-3 bg-gradient-to-b from-gray-700 via-gray-900 to-black ">
         <ParticleBackground />
         <Card className="bg-neutral-900 backdrop-blur-md bg-opacity-50 max-w-xl w-full flex flex-col items-start p-12 rounded-[2.5rem] space-y-5 z-10 shadow-2xl">
