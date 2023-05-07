@@ -62,25 +62,6 @@ function ParticleBackground() {
           color: {
             value: "#ffffff",
           },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          line_linked: {
-            enable: true,
-            distance: 100,
-            color: "random",
-            opacity: 0.4,
-            width: 1,
-            triangles: {
-              enable: true,
-              color: "#ffffff",
-              opacity: 0.1,
-            },
-          },
           collisions: {
             enable: true,
           },
