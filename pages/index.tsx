@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
           <h2 className="text-xl md:text-2xl">Startup Builder</h2>
           <h2 className=" text-neutral-400">
-            I help startup founders build digital products, from wireframing to
+            I help founders build digital products, from wireframing to
             developing an MVP.
           </h2>
           <a
